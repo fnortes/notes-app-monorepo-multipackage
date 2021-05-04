@@ -12,17 +12,6 @@ describe('GET /test', () => {
   })
 })
 
-describe('GET /', () => {
-  test('Return server is running message', async () => {
-    const response = await api
-      .get('/')
-      .expect(200)
-      .expect('Content-Type', /text\/html/)
-
-    expect(response.text).toContain('Server is running')
-  })
-})
-
 describe('GET /api/notes', () => {
   test('Notes are returned as json', async () => {
     await api
