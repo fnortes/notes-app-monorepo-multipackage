@@ -10,6 +10,9 @@
     "api",
     "app"
   ],
+  "engines": {
+    "npm": "7.9.0"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -17,7 +20,7 @@
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
     "prepare": "husky install",
-    "build": "npm run build --workspace=app",
+    "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=app",
     "start": "npm run start --workspace=api",
     "start:dev:api": "npm run build && npm run start:dev --workspace=api"
   },
