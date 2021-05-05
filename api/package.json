@@ -8,7 +8,7 @@
     "start:dev": "NODE_ENV=development nodemon index.js",
     "start:test": "NODE_ENV=test nodemon index.js",
     "test": "NODE_ENV=test PORT=3003 jest --verbose --silent --runInBand",
-    "test:watch": "npm run test -- --watch --coverage"
+    "test:watch": "npm run test -- --watchAll --coverage"
   },
   "author": "Francisco Nortes Belmonte",
   "license": "ISC",
