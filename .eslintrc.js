@@ -20,5 +20,6 @@ module.exports = {
     react: {
       version: '16.12'
     }
-  }
+  },
+  ignorePatterns: ['app/**']
 }

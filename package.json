@@ -21,8 +21,8 @@
     "format:fix": "prettier . --write",
     "prepare": "husky install",
     "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=app",
-    "start": "npm run start --workspace=api",
-    "start:dev:api": "npm run build && npm run start:dev --workspace=api"
+    "start": "npm run build && npm run start --workspace=api",
+    "start:dev": "npm run build && npm run start:dev --workspace=api"
   },
   "devDependencies": {
     "eslint": "7.24.0",
